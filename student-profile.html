@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="link.css">
+    <script type="text/javascript" src="./js/qrcode.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="po">
+            <div class="dash">
+                <div class="dash-btns">
+                    <div class="tog">
+                        <div class="tog-btn">&#9776; <span>Dashboard</span></div>
+                    </div>
+                    <div class="notice">
+                        <img src="./images/notifications_active_FILL0_wght400_GRAD0_opsz48.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                    <div class="img">
+                        <!-- <img src="./images/IMG-20221003-WA0005.jpg" alt=""> -->
+                    </div>
+                <div class="name"> Name: <span id="name-display"></span> </div>
+                <div class="lev"> Mat Num: <span id="matric-display"></span> </div>
+                <div class="lev"> Level: <span id="level-display"></span> </div>
+            </div>
+        </div>
+        <div class="sch">
+            <div class="syl">
+                <div class="syl-img">
+                    <img src="./images/schedule_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                </div>
+                <p>Syllables</p>
+            </div>
+            <div class="syl" >
+                <div class="syl-img">
+                    <img src="./images/home.png" alt="">
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <div class="syl mar" >
+                <div class="syl-img" >
+                    <img src="./images/download (33).png" alt="">
+                </div>
+                <p id="click">Scan Qrcode</p>
+            </div>
+            <div class="syl mar">
+                <div class="syl-img">
+                    <img src="./images/settings_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                </div>
+                <p>Setting</p>
+            </div>
+        </div>
+       <div class="code">
+           <button id="close">close</button>
+        <div id="qrcode">
+        </div>
+       </div>
+    </div>
+</body>
+<script src="./js/qr.js"></script>
+</html>
